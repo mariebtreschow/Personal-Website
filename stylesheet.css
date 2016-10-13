@@ -1,0 +1,71 @@
+body {
+    font: 20px
+    line-height: 1.8;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 600%;
+  color: black;
+}
+
+
+p {
+  font-size: 16px;
+  font-family:
+}
+.margin {
+  margin-bottom: 45px;
+  color: black;
+}
+
+.bg-1 {
+    background-image: url('r104d1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+}
+.bg-2 {
+    background-color: white;
+    color: black;
+
+}
+.bg-3 {
+    background-color: #D3D3D3;
+    color: black;
+}
+.bg-5 {
+    background-color: white;
+    color: black;
+}
+
+.bg-4 {
+  background-image: url('apple-desk-laptop-working.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: white !important;
+}
+
+.navbar-brand {
+  font-family: 'Yellowtail', cursive;
+
+}
