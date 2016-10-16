@@ -5,51 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  font-size: 600%;
-  color: black;
-}
-
-
-p {
-  font-size: 16px;
-  font-family:
-}
-.margin {
-  margin-bottom: 45px;
-  color: black;
-}
-
-.bg-1 {
-    background-image: url('r104d1.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: black;
-}
-.bg-2 {
-    background-color: white;
-    color: black;
-
-}
-.bg-3 {
-    background-color: #D3D3D3;
-    color: black;
-}
-.bg-5 {
-    background-color: white;
-    color: black;
-}
-
-.bg-4 {
-  background-image: url('apple-desk-laptop-working.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  color: white;
-}
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
 .navbar {
     position: fixed;
     width: 100%;
@@ -59,13 +14,92 @@ p {
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    z-index: 989;
 }
 .navbar-nav  li a:hover {
     color: white !important;
 }
 
 .navbar-brand {
+  font-size: 400%;
   font-family: 'Yellowtail', cursive;
 
+}
+
+h1 {
+  font-size: 600%;
+  text-align: center;
+  color: black;
+  background-color:white;opacity:0.5;width: auto;text-align: center;
+}
+
+h4 {
+  color: #696969;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: black;
+}
+
+p {
+  font-size: 16px;
+  font-family:
+}
+.margin {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.bg-1 {
+    background-image: url('r104d1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+    top: 500px;
+    height: 600px;
+    overflow: hidden;
+
+
+}
+.bg-2 {
+    background-color: white;
+    color: black;
+
+
+}
+.bg-3 {
+    background-color: #D3D3D3;
+    color: black;
+    z-index: 100;
+
+}
+
+
+.bg-4 {
+  background-image: url('apple-desk-laptop-working.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+
+#contact {
+  color: white;
+}
+
+
+.bg-5 {
+    background-color: white;
+    color: black;
+
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
