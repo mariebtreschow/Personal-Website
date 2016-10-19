@@ -17,6 +17,7 @@ body {
     letter-spacing: 3px;
     z-index: 989;
 }
+
 .navbar-nav  li a:hover {
     color: white !important;
 }
@@ -24,22 +25,32 @@ body {
 .navbar-brand {
   font-size: 400%;
   font-family: 'Yellowtail', cursive;
+}
 
+ul#navbar-list li {
+  color: black;
+}
+
+.nav navbar-nav navbar-right {
+  color: black;
 }
 
 h1 {
   font-size: 600%;
   text-align: center;
-  color: black;
-  background-color:white;opacity:0.5;width: auto;text-align: center;
+  color: white;
 }
 
 h4 {
   color: #696969;
 }
 
+h5 {
+  font-size: 25px;
+}
+
 a:hover {
-  color: red;
+  color: #FFB6C1;
 }
 
 a {
@@ -56,47 +67,49 @@ p {
 }
 
 .bg-1 {
-    background-image: url('r104d1.jpg');
+    background-image: url('http://wallpaper.zone/img/125867.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: black;
     top: 500px;
     height: 600px;
     overflow: hidden;
-
-
 }
+
 .bg-2 {
     background-color: white;
     color: black;
-
-
 }
+
 .bg-3 {
     background-color: #D3D3D3;
     color: black;
     z-index: 100;
-
 }
 
 
 .bg-4 {
-  background-image: url('apple-desk-laptop-working.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  color: white;
+  color: black;
+  background-color: white;
 
 }
 
-#contact {
-  color: white;
+.bg-4 a:hover #contact {
+  color: #FFB6C1;
 }
 
+h6 {
+  color: black;
+  font-size: 50px;
+}
+
+h3 {
+  color: white;
+}
 
 .bg-5 {
-    background-color: white;
+    background-color: grey;
     color: black;
-
 }
 
 .container-fluid {

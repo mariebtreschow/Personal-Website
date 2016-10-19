@@ -20,12 +20,10 @@
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      </button>
       <a class="navbar-brand">M.T</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse">
+      <ul id ="navbar-list" class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -36,16 +34,16 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-<br><br><br><br><br><br>
+<br><br><br><br>
 
-<h1 class="margin"><b>Marie Treschow</b></h1>
-      <h3>Full-stack Web Developer</h3>
+<h1><b>Marie Treschow</b></h1><br>
+      <h5>Full-stack Web Developer</h5>
   <h4><i>JavaScript, HTML, CSS, Node.js, jQuery</i></h4>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <a id="about"><h3 class="margin"><b>ABOUT</b></h3></a>
+  <a id="about"><h5 class="margin"><b>ABOUT</b></h5></a>
   <p>Coding Bootcamp graduate from <a href="https://nycda.com/">The New York Code + Design Academy</a>
     <br>with a Bachelor's degree in Business & Economics from <a href="https://www.hhs.se/">Stockholm School of Economics</a>.
   <br> Interested in Web Wevelopment, Digital Marketing and UX Design.</p>
@@ -57,7 +55,7 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">
-  <a id="portfolio"><h3 class="margin"><b>PORTFOLIO</b></h3></a>
+  <a id="portfolio"><h5><b>PORTFOLIO</b></h5></a>
   <p><i>Take a look at what I have done so far:</i></p>
   <br>
   <div class="row">
@@ -81,20 +79,41 @@
 
 
 <!-- Fourth Container -->
-<div class="container-fluid bg-4 text-center">
-<a id="contact"><h3><b>CONTACT</b></h3></a>
-  <p>
-    Never hesitate to shoot me a message or give me a call. <br>
-    <br>
-      Email: treschow.marie@gmail.com <br>
-      Phone: +31617447364 <br>
-      Twitter: @marietrellan <br>
-
-    </p>
-<br>
-  <a href="mailto:treschow.marie@gmail.com" class="btn btn-default btn-lg">
-    Send me an Email
-  </a>
+<div id="contact">
+<div class="container-fluid bg-4">
+<div class="row">
+  <div class="col-xs-8">
+  <h6><b>Get in touch:</b></h6>
+  <form>
+    <div class="form-group">
+      <label for="formGroupFirstInput"><b>FULL NAME</b></label>
+      <div class="row">
+          <div class="col-xs-4">
+      <input class="form-control form-control-lg" type="text" id="fullName" placeholder="Full Name">
+          </div>
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="formGroupSecondInput"><b>EMAIL ADDRESS</b></label>
+      <div class="row">
+        <div class="col-xs-4">
+      <input class="form-control form-control-lg" type="text" id="emailAddress" placeholder="Email Address">
+          </div>
+        </div>
+    </div>
+    <div class="form-group">
+  <label for="formGroupThirdInput"><b>MESSAGE</b></label>
+  <div class="row">
+    <div class="col-xs-8">
+  <textarea class="form-control" id="message" rows="5"></textarea>
+      </div>
+    </div>
+  </div>
+    <button type="submit" class="btn btn-success btn-lg">Shoot me a message</button>
+  </form>
+</div>
+</div>
+</div>
 </div>
 
 <!-- Footer -->
