@@ -77,23 +77,38 @@ html.no-js
           |
           a(href='https://github.com/mariebtreschow')
             img.img-responsive.margin(src='github.png', style='width:100% height:200px', alt='Image')
-    .container-fluid.bg-4.text-center
-      a#contact
-        h3
-          b CONTACT
-      p
-        | Never hesitate to shoot me a message or give me a call.
-        br
-        br
-        |  Email: treschow.marie@gmail.com
-        br
-        |  Phone: +31617447364
-        br
-        |  Twitter: @marietrellan
-        br
-      br
-      |
-      a.btn.btn-default.btn-lg(href='mailto:treschow.marie@gmail.com') Send me an Email
+
+       #contact
+       .container-fluid.bg-4
+        .row
+         .col-xs-1
+          .col-xs-8
+             h6
+               b Get in touch:
+            form
+              .form-group
+                label(for='formGroupFirstInput')
+                  b FULL NAME
+                    .row
+                      .col-xs-4
+                        input#fullName.form-control.form-control-lg(type='text', placeholder='Full Name')
+              .form-group
+                        label(for='formGroupSecondInput')
+                          b EMAIL ADDRESS
+                    .row
+                      .col-xs-4
+                        input#emailAddress.form-control.form-control-lg(type='text', placeholder='Email Address')
+                  .form-group
+                        label(for='formGroupThirdInput')
+                          b MESSAGE
+                    .row
+                      .col-xs-8
+                        textarea#message.form-control(rows='5')
+                        |
+                        button.btn.btn-success.btn-lg(type='submit') Shoot me a message
+
+
+
     footer.container-fluid.bg-5.text-center
       .footerLink
         a(href='https://www.linkedin.com/in/marie-treschow-24899040?authType=&authToken=&trk=')
