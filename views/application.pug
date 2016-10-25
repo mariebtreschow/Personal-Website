@@ -10,6 +10,7 @@ html.no-js
     link(rel='shortcut icon', href='marie.ico')
     link(href='https://fonts.googleapis.com/css?family=Great+Vibes%7CKalam%7CKaushan+Script%7COpen+Sans%7CRoboto%7CSatisfy%7CYellowtail%7CMontserrat', rel='stylesheet')
   body
+
     nav.navbar.navbar-default
       .container
         .navbar-header
@@ -22,100 +23,91 @@ html.no-js
               a(href='#portfolio') PORTFOLIO
             li
               a(href='#contact') CONTACT
+
     .container-fluid.bg-1.text-center
-      br
-      br
       br
       br
       br
       br
       h1
         b Marie Treschow
-      br
+
       h5 Full-stack Web Developer
       h4
         i JavaScript, HTML, CSS, Node.js, jQuery
+
     .container-fluid.bg-2.text-center
       a#about
         h5.margin
           b ABOUT
-      p
-        | Coding Bootcamp graduate from
+      p Coding Bootcamp graduate from
         a(href='https://nycda.com/') The New York Code + Design Academy
         br
-        | with a Bachelor&apos;s degree in Business &amp; Economics from
-        a(href='https://www.hhs.se/') Stockholm School of Economics
-        | .
+        with a Bachelor's degree in Business & Economics from
+        a(href='https://www.hhs.se/') Stockholm School of Economics.
         br
-        |  Interested in Web Wevelopment, Digital Marketing and UX Design.
-      br
-      |
-      a.btn.btn-default.btn-lg(href='https://www.linkedin.com/in/marie-treschow-24899040?trk=nav_responsive_tab_profile_pic') LinkedIn
+        Interested in Web Wevelopment, Digital Marketing and UX Design.
+        br
+        br
+        a.btn.btn-default.btn-lg(target='_blank', href='https://www.linkedin.com/in/marie-b-treschow-24899040?trk=hp-identity-name') LinkedIn
+
     .container-fluid.bg-3.text-center
       a#portfolio
         h5
           b PORTFOLIO
       p
         i Take a look at what I have done so far:
-      br
+
       .row
         .col-sm-4
           p
             b Rainbow Generator
-          |
-          a(href='https://github.com/mariebtreschow/rainbows/blob/master/chalk_rainbow.js')
+          a(target='_blank', href='https://github.com/mariebtreschow/rainbows/blob/master/chalk_rainbow.js')
             img.img-responsive.margin(src='http://www.sretan-dan.hr/wp-content/uploads/2012/09/rainbow-1.png', style='width:100%', alt='Image')
         .col-sm-4
           p
             b Personal Website
-          |
-          a(href='file:///Users/marietreschow/personal-website2/index.html')
+          a(target='_blank', href='file:///Users/marietreschow/personal-website2/index.html')
             img.img-responsive.margin(src='website.png', style='width:100%', alt='Image')
         .col-sm-4
           p
             b Read my code at Github
-          |
-          a(href='https://github.com/mariebtreschow')
+          a(target='_blank', href='https://github.com/mariebtreschow')
             img.img-responsive.margin(src='github.png', style='width:100% height:200px', alt='Image')
 
-       #contact
-       .container-fluid.bg-4
+    #contact
+      .container-fluid.bg-4
         .row
-         .col-xs-1
+          .col-xs-1
           .col-xs-8
-             h6
-               b Get in touch:
+            h6
+              b Get in touch:
             form
               .form-group
                 label(for='formGroupFirstInput')
                   b FULL NAME
-                    .row
-                      .col-xs-4
-                        input#fullName.form-control.form-control-lg(type='text', placeholder='Full Name')
+                .row
+                  .col-xs-4
+                    input#fullName.form-control.form-control-lg(name="full_name" type='text', placeholder='Full Name')
               .form-group
-                        label(for='formGroupSecondInput')
-                          b EMAIL ADDRESS
-                    .row
-                      .col-xs-4
-                        input#emailAddress.form-control.form-control-lg(type='text', placeholder='Email Address')
-                  .form-group
-                        label(for='formGroupThirdInput')
-                          b MESSAGE
-                    .row
-                      .col-xs-8
-                        textarea#message.form-control(rows='5')
-                        |
-                        button.btn.btn-success.btn-lg(type='submit') Shoot me a message
-
-
+                label(for='formGroupSecondInput')
+                  b EMAIL ADDRESS
+                .row
+                  .col-xs-4
+                    input#emailAddress.form-control.form-control-lg(name="email" type='text', placeholder='Email Address')
+              .form-group
+                label(for='formGroupThirdInput')
+                  b MESSAGE
+                .row
+                  .col-xs-8
+                    textarea#message.form-control(name="email_content" rows='5')
+              button.btn.btn-success.btn-lg(type='submit') Shoot me a message
 
     footer.container-fluid.bg-5.text-center
       .footerLink
-        a(href='https://www.linkedin.com/in/marie-treschow-24899040?authType=&authToken=&trk=')
+        a(target='_blank', href='https://www.linkedin.com/in/marie-treschow-24899040?authType=&authToken=&trk=')
           img(src='http://image.flaticon.com/icons/svg/34/34405.svg', alt='LinkedIn', width='40', height='40')
-        |
-        a(href='https://twitter.com/marietrellan')
+        a(target='_blank', href='https://twitter.com/marietrellan')
           img(src='https://www.seeklogo.net/wp-content/uploads/2015/09/twitter-square-logo.png', alt='Twitter', width='50', height='50')
-        |
-        a(href='https://github.com/mariebtreschow')
+        a(target='_blank', href='https://github.com/mariebtreschow')
           img(src='http://image.flaticon.com/icons/svg/25/25231.svg', alt='Github', width='40', height='40')

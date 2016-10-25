@@ -1,21 +1,27 @@
-var express = require('express');
-var pug = require('pug');
-var app = express();
+const express = require('express'),
+      morgan = require('morgan'),
+      bodyParser = require('body-parser'),
+      pug = require('pug'),
+      app = express();
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
-app.set('view engine', './pug');
+app.use(morgan('dev'));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/', function(request, response) {
-  response.render('/application.pug');
+  console.log('Requesting homepage and contact form');
+  response.send(pug.renderFile(__dirname + '/views/application.pug', {}));
 });
 
-app.get('/', function(request, response) {
-
-  response.sendFile(__dirname + '/index.html');
+app.post('/send-email', function(request, response) {
+  console.log('called the post route on express');
 });
 
 app.listen(3000, function() {
-  console.log('Example app listening on port 3000!');
+  console.log('Example app listening on port 3000!!!');
 });
