@@ -32,7 +32,7 @@ html.no-js
       h1
         b Marie Treschow
 
-      h5 Full-stack Web Developer
+      h5 Full-stack Web Developer in the making
       h4
         i JavaScript, HTML, CSS, Node.js, jQuery
 
@@ -82,25 +82,25 @@ html.no-js
           .col-xs-8
             h6
               b Get in touch:
-            form
+            form(action="/send-email" method="POST")
               .form-group
-                label(for='formGroupFirstInput')
+                label(for='full_name')
                   b FULL NAME
                 .row
                   .col-xs-4
-                    input#fullName.form-control.form-control-lg(name="full_name" type='text', placeholder='Full Name')
+                    input#fullName.form-control.form-control-lg(name="fullName" type='text', placeholder='Full Name')
               .form-group
-                label(for='formGroupSecondInput')
+                label(for='email')
                   b EMAIL ADDRESS
                 .row
                   .col-xs-4
-                    input#emailAddress.form-control.form-control-lg(name="email" type='text', placeholder='Email Address')
+                    input#emailAddress.form-control.form-control-lg(name="emailAddress" type='text', placeholder='Email Address')
               .form-group
-                label(for='formGroupThirdInput')
+                label(for='email_content')
                   b MESSAGE
                 .row
                   .col-xs-8
-                    textarea#message.form-control(name="email_content" rows='5')
+                    textarea#message.form-control(name="content" rows='5')
               button.btn.btn-success.btn-lg(type='submit') Shoot me a message
 
     footer.container-fluid.bg-5.text-center
