@@ -6,7 +6,7 @@ const express = require('express'),
       app = express();
 
 
-var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:cutest229967hh@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:xxxxxx@smtp.gmail.com');
 
 
 app.use(express.static(__dirname + '/public'));
