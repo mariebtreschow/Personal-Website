@@ -15,7 +15,8 @@ body {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 3px;
-    z-index: 989;
+    z-index: 999;
+
 }
 
 .navbar-nav  li a:hover {
@@ -27,22 +28,22 @@ body {
   font-family: 'Yellowtail', cursive;
 }
 
-ul#navbar-list li {
-  color: black;
-}
-
-.nav navbar-nav navbar-right {
-  color: black;
-}
-
 h1 {
   font-size: 600%;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   color: white;
+  margin-top: 150px;
+  letter-spacing: 8px;
 }
 
 h3 {
-  color: white;
+   font-size: 30px;
+   margin-top: 70px;
+   text-align: center;
+   margin-bottom: 40px;
+   font-family: 'Work Sans', sans-serif;
+
 }
 
 h2 {
@@ -59,18 +60,21 @@ h4 {
 
 h5 {
   font-size: 30px;
-  margin-top: 90px;
+  margin-top: 70px;
   text-align: center;
   margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 h6 {
   color: black;
   font-size: 60px;
+  margin-top: 10px;
 }
 
 a:hover {
-  color: #FFB6C1;
+  color: black;
 }
 
 a {
@@ -80,6 +84,7 @@ a {
 p {
   font-size: 16px;
   text-align: center;
+  font-family:
 }
 
 .margin {
@@ -88,8 +93,9 @@ p {
 }
 
 div.container-fluid.bg-1 {
-   margin-top: 80px;
+   margin-top: 0px;
    text-align: center;
+
 }
 
 .bg-1 {
@@ -122,6 +128,7 @@ div.container-fluid.bg-2 {
 div.container-fluid.bg-3 {
    padding-top: 0px;
    text-align: center;
+   padding-bottom: 40px;
 }
 
 .bg-3 {
@@ -152,4 +159,16 @@ div.container-fluid.bg-3 {
 
 a.btn.btn-default.btn-lg {
    margin-top: 20px;
+}
+
+footer.container-fluid.bg-5 {
+   font-weight: bold;
+   font-family: sans-serif;
+   padding-bottom: 20px;
+   padding-top: 30px;
+}
+
+
+.col-md-6.text-center {
+   padding-top: 2.5%;
 }
