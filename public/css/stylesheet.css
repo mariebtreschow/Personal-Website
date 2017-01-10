@@ -37,19 +37,18 @@ h1 {
   letter-spacing: 8px;
 }
 
+h2 {
+   color: black;
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
 h3 {
    font-size: 30px;
    margin-top: 70px;
    text-align: center;
    margin-bottom: 40px;
    font-family: 'Work Sans', sans-serif;
-
-}
-
-h2 {
-   color: black;
-   font-size: 18px;
-   margin-bottom: 30px;
 }
 
 h4 {
@@ -64,7 +63,6 @@ h5 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 h6 {
@@ -84,18 +82,11 @@ a {
 p {
   font-size: 16px;
   text-align: center;
-  font-family:
-}
-
-.margin {
-  margin-bottom: 45px;
-  text-align: center;
 }
 
 div.container-fluid.bg-1 {
    margin-top: 0px;
    text-align: center;
-
 }
 
 .bg-1 {
@@ -163,11 +154,11 @@ a.btn.btn-default.btn-lg {
 
 footer.container-fluid.bg-5 {
    font-weight: bold;
+   background-color: #D3D3D3;
    font-family: sans-serif;
    padding-bottom: 20px;
    padding-top: 30px;
 }
-
 
 .col-md-6.text-center {
    padding-top: 2.5%;
