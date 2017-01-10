@@ -41,12 +41,26 @@ h1 {
   color: white;
 }
 
+h3 {
+  color: white;
+}
+
 h4 {
   color: black;
+  font-size: 25px;
+  margin-top: 100px;
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 30px;
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h6 {
+  color: black;
+  font-size: 60px;
 }
 
 a:hover {
@@ -59,11 +73,16 @@ a {
 
 p {
   font-size: 16px;
-  font-family:
+  text-align: center;
 }
+
 .margin {
   margin-bottom: 45px;
   text-align: center;
+}
+
+div.container-fluid.bg-1.text-center {
+   margin-top: 80px;
 }
 
 .bg-1 {
@@ -74,6 +93,13 @@ p {
     top: 500px;
     height: 600px;
     overflow: hidden;
+    margin-top: auto;
+    padding
+}
+
+div.container-fluid.bg-2.text-center {
+   padding-top: 0px;
+   width: 700px;
 }
 
 .bg-2 {
@@ -81,12 +107,15 @@ p {
     color: black;
 }
 
+div.container-fluid.bg-3.text-center {
+   padding-top: 0px;
+}
+
 .bg-3 {
     background-color: #D3D3D3;
     color: black;
     z-index: 100;
 }
-
 
 .bg-4 {
   color: black;
@@ -96,15 +125,6 @@ p {
 
 .bg-4 a:hover #contact {
   color: #FFB6C1;
-}
-
-h6 {
-  color: black;
-  font-size: 60px;
-}
-
-h3 {
-  color: white;
 }
 
 .bg-5 {
