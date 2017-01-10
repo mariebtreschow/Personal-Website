@@ -5,7 +5,8 @@ const express = require('express'),
       nodemailer = require('nodemailer'),
       app = express();
 
-var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:XXXXXX@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:'+
+ process.env.WEBSITE_EMAIL_PASSWORD +'@smtp.gmail.com');
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
