@@ -5,7 +5,7 @@ const express = require('express'),
       nodemailer = require('nodemailer'),
       app = express();
 
-var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:XXXXXXX@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:ssamarine1@smtp.gmail.com');
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
@@ -28,14 +28,14 @@ app.post('/send-email', function(req, res){
     from: 'treschow.marie@gmail.com',
     to: 'treschow.marie@gmail.com',
     subject: 'Email from Personal Website',
-    text: req.body.email_content + '\n\nSender Email: ' +
+    text: req.body.content + '\n\nSender Email: ' +
     req.body.emailAddress  + '\nSender Full Name: ' + req.body.fullName
     }, (error, info) => {
     if (error) {
       return console.log(error);
     }
 
-    console.log('Message sent: ' + info.res);
+    console.log('Message sent: ' + req.info);
   });
 
   res.redirect('/');
