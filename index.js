@@ -5,13 +5,7 @@ const express = require('express'),
       nodemailer = require('nodemailer'),
       app = express();
 
-
-<<<<<<< HEAD
 var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:XXXXXXX@smtp.gmail.com');
-=======
-var transporter = nodemailer.createTransport('smtps://treschow.marie%40gmail.com:xxxxxx@smtp.gmail.com');
->>>>>>> 25d731fd06284d2a45fa710f7c359c7f53c2593d
-
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
