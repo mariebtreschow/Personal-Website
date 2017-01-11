@@ -16,7 +16,6 @@ body {
     font-size: 12px;
     letter-spacing: 3px;
     z-index: 999;
-
 }
 
 .navbar-nav  li a:hover {
@@ -30,7 +29,7 @@ body {
 
 h1 {
   font-size: 600%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   color: white;
   margin-top: 150px;
@@ -48,7 +47,7 @@ h3 {
    margin-top: 70px;
    text-align: center;
    margin-bottom: 40px;
-   font-family: 'Work Sans', sans-serif;
+   font-family: 'Nunito Sans', sans-serif;
 }
 
 h4 {
@@ -155,9 +154,10 @@ a.btn.btn-default.btn-lg {
 footer.container-fluid.bg-5 {
    font-weight: bold;
    background-color: #D3D3D3;
-   font-family: sans-serif;
    padding-bottom: 20px;
    padding-top: 30px;
+   letter-spacing: 2px;
+   color: #696969;
 }
 
 .col-md-6.text-center {
