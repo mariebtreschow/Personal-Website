@@ -36,18 +36,13 @@ h1 {
   letter-spacing: 8px;
 }
 
-h2 {
-   color: black;
-   font-size: 18px;
-   margin-bottom: 30px;
-}
-
 h3 {
    font-size: 30px;
    margin-top: 70px;
    text-align: center;
    margin-bottom: 40px;
    font-family: 'Nunito Sans', sans-serif;
+   color: #333333;
 }
 
 h4 {
@@ -62,6 +57,7 @@ h5 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
+  color: #333333;
 }
 
 h6 {
@@ -81,6 +77,7 @@ a {
 p {
   font-size: 16px;
   text-align: center;
+  color: #333333;
 }
 
 div.container-fluid.bg-1 {
