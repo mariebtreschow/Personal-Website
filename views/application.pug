@@ -6,7 +6,9 @@ html.no-js
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
 		link(rel='stylesheet', href='css/stylesheet.css')
+		link(href='jquery/app.js')
 		link(rel='shortcut icon', href='marie.ico')
 		link(href='https://fonts.googleapis.com/css?family=Roboto%7CYellowtail%7CMontserrat|Nunito+Sans', rel='stylesheet')
 	body
@@ -21,7 +23,7 @@ html.no-js
 						span.icon-bar
 						span.icon-bar
 
-				.navbar-collapse.navbar-right
+				#top.navbar-collapse.navbar-right
 					ul.nav.navbar-nav.navbar-right
 						li
 							a(href='#about') ABOUT
@@ -36,20 +38,18 @@ html.no-js
 			h3
 				b Full-stack Web Developer in JavaScript
 
-		.container-fluid.bg-2
-			a#about
-				h5
-					b ABOUT
+		#about.container-fluid.bg-2
+			h5
+				b ABOUT
 			p Coding Bootcamp graduate from The New York Code + Design Academy with a bachelor's degree in business & economics from Stockholm School of Economics. My passion lays within web development and ux design.
 			p
 				b Skills & Technologies: JavaScript, jQuery, AJAX, Node.js, Express.js, SQL, postgreSQL, Sequelize ORM, WebSockets, Socket.IO, Gulp, Mocha, Continuous Integration, CircleCi, PM2, Bash, Git, Heroku, HTML, CSS, Sass, Bootstrap
 
 			a.btn.btn-default.btn-lg(target='_blank', href='https://www.linkedin.com/in/marie-b-treschow-24899040?trk=hp-identity-name') LinkedIn
 
-		.container-fluid.bg-3
-			a#portfolio
-				h5
-					b PORTFOLIO
+		#portfolio.container-fluid.bg-3
+			h5
+				b PORTFOLIO
 			p
 				i Take a look at what I have done so far, click to read the code:
 			br
@@ -70,33 +70,33 @@ html.no-js
 					a(target='_blank', href='https://github.com/mariebtreschow')
 						img.img-responsive.margin(src='mygithub.png', style='height:200px, width:150px', alt='Image')
 
-		#contact
-			.container-fluid.bg-4
-				.row
-					.col-md-1
-					.col-md-8
-						h6
-							b Get in touch:
-						form(action="/send-email" method="POST")
-							.form-group
-								label(for='full_name')
-									b FULL NAME
-								.row
-									.col-xs-4
-										input#fullName.form-control.form-control-lg(name="fullName" type='text', placeholder='Full Name')
-							.form-group
-								label(for='email')
-									b EMAIL ADDRESS
-								.row
-									.col-xs-4
-										input#emailAddress.form-control.form-control-lg(name="emailAddress" type='text', placeholder='Email Address')
-							.form-group
-								label(for='email_content')
-									b MESSAGE
-								.row
-									.col-xs-8
-										textarea#message.form-control(name="content" rows='5')
-							button.btn.btn-default.btn-lg(type='submit') Send me a message
+
+		.container-fluid.bg-4
+			.row
+				.col-md-1
+				#contact.col-md-8
+					h6
+						b Get in touch:
+					form(action="/send-email" method="POST")
+						.form-group
+							label(for='full_name')
+								b FULL NAME
+							.row
+								.col-xs-4
+									input#fullName.form-control.form-control-lg(name="fullName" type='text', placeholder='Full Name')
+						.form-group
+							label(for='email')
+								b EMAIL ADDRESS
+							.row
+								.col-xs-4
+									input#emailAddress.form-control.form-control-lg(name="emailAddress" type='text', placeholder='Email Address')
+						.form-group
+							label(for='email_content')
+								b MESSAGE
+							.row
+								.col-xs-8
+									textarea#message.form-control(name="content" rows='5')
+						button.btn.btn-default.btn-lg(type='submit') Send me a message
 
 		footer.container-fluid.bg-5
 			.row
@@ -117,3 +117,6 @@ html.no-js
 						img(src='https://www.seeklogo.net/wp-content/uploads/2015/09/twitter-square-logo.png', alt='Twitter', width='50', height='50')
 					a(target='_blank', href='https://github.com/mariebtreschow')
 						img(src='http://image.flaticon.com/icons/svg/25/25231.svg', alt='Github', width='40', height='40')
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="jquery/app.js")

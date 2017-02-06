@@ -111,13 +111,15 @@ div.container-fluid.bg-2 {
 div.container-fluid.bg-3 {
    padding-top: 0px;
    text-align: center;
-   padding-bottom: 40px;
+
 }
+
 
 .bg-3 {
     background-color: #D3D3D3;
     color: black;
     z-index: 100;
+
 }
 
 .bg-4 {
