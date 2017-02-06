@@ -12,18 +12,18 @@ html.no-js
 		link(rel='shortcut icon', href='marie.ico')
 		link(href='https://fonts.googleapis.com/css?family=Roboto%7CYellowtail%7CMontserrat|Nunito+Sans', rel='stylesheet')
 	body
-
-		nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+	#top
+		.nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
 			.container
 				.navbar-header
-					a.navbar-brand(href='/') M.T
+					a.navbar-brand(href='#top') M.T
 					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 						span.sr-only Toggle navigation
 						span.icon-bar
 						span.icon-bar
 						span.icon-bar
 
-				#top.navbar-collapse.navbar-right
+				.navbar-collapse.navbar-right
 					ul.nav.navbar-nav.navbar-right
 						li
 							a(href='#about') ABOUT
